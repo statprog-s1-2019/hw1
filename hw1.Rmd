@@ -1,5 +1,8 @@
-Homework 2
-========================================================
+---
+title: "Homework 1"
+output: github_document
+author: [Your name here]
+---
 
 ```{r setup, include = FALSE}
 remotes::install_github("rundel/chunktest")
@@ -19,7 +22,7 @@ fizzbuzz = function(v) {
 }
 
 fizzbuzz.default = function(v) {
-  print(v)
+
 }
 
 ```
@@ -27,11 +30,12 @@ fizzbuzz.default = function(v) {
 ### Task 2 - Re-Validation & Testing
 
 ```{testthat good_input}
-context("fizzbuzz good inputs")
-
-#fizzbuzz(1)
 test_that("Single Integer", {
-  expect_output(fizzbuzz(1), "\\[1\\] 1")
+  expect_output(fizzbuzz(1L), "\\[1\\] 1") #fizzbuzz(1)
+})
+
+test_that("Multiple Integers", {
+  expect_output(fizzbuzz(1:2), "\\[1\\] 1\n\\[1\\] 2") #fizzbuzz(1)
 })
 ```
 
@@ -46,15 +50,9 @@ fizzbuzz(15:9)
 fizzbuzz(1:12)
 ```
 
-
-#### Bad Inputs
-
 ```{testthat bad_input}
-context("fizzbuzz good inputs")
-
-#fizzbuzz(1)
 test_that("Single Negative Integer", {
-  expect_error(fizzbuzz(-1))
+  expect_error(fizzbuzz(-1)) #fizzbuzz(1)
 })
 ```
 
