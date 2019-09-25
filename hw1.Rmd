@@ -56,7 +56,7 @@ test_that("Single Negative Integer", {
 })
 ```
 
-```{r errot=TRUE}
+```{r error=TRUE}
 fizzbuzz(-1)
 fizzbuzz(-3)
 fizzbuzz(-5)
