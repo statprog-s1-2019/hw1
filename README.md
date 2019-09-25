@@ -1,3 +1,6 @@
+[![Check Repo status](https://github.com/statprog-s1-2019/hw1/workflows/Check%20Repo/badge.svg)](https://github.com/statprog-s1-2019/hw1/actions)
+
+
 Statistical Programming - Homework 1
 -------------
 
