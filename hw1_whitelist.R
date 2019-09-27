@@ -1,8 +1,8 @@
-allowed_files = c("hw2.Rmd",
+allowed_files = c("hw1.md",
+                  "hw1.Rmd",
                   "README.md",
-                  "wercker.yml",
-                  "hw2.Rproj",
-                  "hw2_whitelist.R",
+                  "hw1.Rproj",
+                  "hw1_whitelist.R",
                   "fizzbuzz.png",
                   ".gitignore")
 
