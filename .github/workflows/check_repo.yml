@@ -2,8 +2,6 @@ on:
   push:
     branches:
     - master
-    paths:
-    - 'hw1.Rmd'  
 name: Check Repo
 jobs:
   knit:
