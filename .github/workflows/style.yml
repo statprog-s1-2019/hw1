@@ -1,7 +1,8 @@
-on:
-  schedule:
-    - cron:  '00 0,12,17 * * *'
 name: Style Repo
+on:
+  push:
+    branches:
+    - master
 jobs:
   style:
     runs-on: ubuntu-latest
