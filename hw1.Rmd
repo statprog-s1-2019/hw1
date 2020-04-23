@@ -17,14 +17,13 @@ library(testthat)
 Include a brief description of your implementation here
 
 ```{r}
-fizzbuzz = function(v) {
+fizzbuzz <- function(v) {
   UseMethod("fizzbuzz")
 }
 
-fizzbuzz.default = function(v) {
+fizzbuzz.default <- function(v) {
 
 }
-
 ```
 
 ### Task 2 - Re-Validation & Testing
