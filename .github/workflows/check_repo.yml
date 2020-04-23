@@ -1,16 +1,15 @@
+name: Check Repo
 on: 
   push:
     branches:
     - master
-name: Check Repo
 jobs:
   knit:
     runs-on: ubuntu-latest
     container:
       image: rocker/tidyverse:latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
+    - uses: actions/checkout@master
     - name: Check
       run:  Rscript -e "rmarkdown::render('hw1.Rmd')"
   allowed-files:
@@ -18,8 +17,7 @@ jobs:
     container:
       image: rocker/r-ver:latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
+    - uses: actions/checkout@master
     - name: Check
       run: Rscript -e "source('https://raw.githubusercontent.com/statprog-s1-2019/hw1/master/hw1_whitelist.R')"
       
