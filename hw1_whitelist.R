@@ -4,7 +4,8 @@ allowed_files = c("hw1.md",
                   "hw1.Rproj",
                   "hw1_whitelist.R",
                   "fizzbuzz.png",
-                  ".gitignore")
+                  ".gitignore",
+                  "data.csv")
 
 files = dir()
 disallowed_files = files[!(files %in% allowed_files)]
